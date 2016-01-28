@@ -61,7 +61,7 @@ function creaFormularioProductos()
                         
                         $unprecio=$cliente->obtienePrecioProducto($p->getcodigo());
                       
-                        print "Precio :"+$unprecio+"<br>";
+                        print "<p>Precio :"+$unprecio+"</p>";
                     
                     }
                     catch(Exception $e) 
@@ -71,12 +71,11 @@ function creaFormularioProductos()
 
 
 
+                    // echo $p->getPVP();
                     
-                   // echo $p->getPVP();
-                    
-                    echo "Codigo :"+$p->getcodigo()+"<br>";
-                    echo "Nombre :"+$p->getnombre()+"<br>";
-                    echo "Muestra :"+$p->muestra()+"<br>";
+                    echo "<p>"+$p->getcodigo()+"</p>";
+                    echo "<p>"+$p->getnombre()+"</p>";
+                    echo "<p>:"+$p->muestra()+"</p>";
                                 
                 }
             
